@@ -1,0 +1,20 @@
+textarea {
+  resize: none;
+
+  position: absolute;
+  top: 0%;
+  left: 0;
+
+  width: 100%;
+  height: calc(100% - 2rem);
+
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 1rem;
+
+  background: var(--theme-background-secondary);
+
+  color: var(--theme-text);
+  font-size: 1.25rem;
+}
