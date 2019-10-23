@@ -18,7 +18,8 @@ export class QtRoot {
       <div class="qt-root">
         <textarea value={this.note} onInput={(event) => this.handleChange(event)}></textarea>
         <footer>
-          <p>Quickthoughts</p>
+          <span><i>Quickthoughts</i></span>
+          <span>v1.0.0</span>
         </footer>
       </div>
     )
