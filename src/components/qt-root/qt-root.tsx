@@ -6,11 +6,11 @@ import { Component, State, h } from '@stencil/core';
 })
 export class QtRoot {
 
-  @State() note: string = atob(location.pathname.substring(1));
+  @State() note: string = atob(location.pathname.substring(15));
 
   handleChange (event) {
     this.note = event.target.value;
-    history.pushState({ note: this.note }, this.note, `/${btoa(this.note)}`);
+    history.pushState({ note: this.note }, this.note, `/quickthoughts/${btoa(this.note)}`);
   }
 
   render () {
